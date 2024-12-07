@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.navigation {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(143, 143, 148, 1) 29%,
+    rgb(255, 255, 255) 100%
+  );
+  width: 100%;
+  display: flex;
+  align-items: normal;
+  height: 80px;
+  color: #000;
+}
+.navlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee5e5;
+  font-size: large;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+  text-decoration: none;
+  
+  font-weight: bold;
+}
+a:link {
+  color: blue; /* Unvisited link */
+}
+
+a:visited {
+  color:  #5a2118; /* Visited link */
+}
+
+a:hover {
+  color: rgb(83, 241, 83); /* Mouse over link */
+}
+
+a:active {
+  color: orange; /* Clicked link */
+}
+
+.navbar {
+  display: flex;
+  justify-content: last baseline;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 35%;
+  color: #000;
+}
+.naventer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 25%;
+  size: 20px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.bckimg {
+  width: 75%;
+  height: auto;
+  padding: 10px;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+}
+.main_title {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  margin: 30px;
+  /*max-width: 100%;
+    max-height: 100%;*/
+  flex-direction: column;
+  gap: 1rem;
+}
+.start {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidimg {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  margin: 30px;
+  padding: 20px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  z-index: 2;
+  box-shadow: 3px 3px 20px rgb(39, 178, 196);
+  border-style: none;
+}
+.sidimg:hover {
+  transform: rotateY(180deg);
+}
+.lines {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+.plan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+  padding: 10px;
+}
+#head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course {
+  display: grid;
+  margin: 10px;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  width: auto;
+  height: 400px;
+  gap: 2rem;
+}
+.box1 {
+  border: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 10px;
+  background-color: rgba(186, 182, 182, 0.589);
+  border-width: 5px;
+  box-shadow: 3px 3px 3px rgb(86, 84, 84);
+  gap: 0.5rem;
+}
+#borbox {
+  border: 1px solid black;
+  background-color: #000;
+  color: azure;
+  width: 90px;
+  box-sizing: content-box;
+  border-radius: 10px;
+  line-height: 3rem;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.box2 {
+  border: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 10px;
+  background-color: rgba(186, 182, 182, 0.589);
+  border-width: 5px;
+  box-shadow: 3px 3px 3px rgb(86, 84, 84);
+  gap: 0.5rem;
+}
+.box3 {
+  border: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border-radius: 10px;
+  background-color: rgba(186, 182, 182, 0.589);
+  border-width: 5px;
+  box-shadow: 3px 3px 3px rgb(86, 84, 84);
+  gap: 0.5rem;
+}
+.box3:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.box2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.box1:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+#box4 {
+  border: 1px solid #5f5c5c;
+  background-color: #5f5c5c;
+  color: azure;
+  width: 90px;
+  box-sizing: content-box;
+  border-radius: 10px;
+  line-height: 3rem;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+span {
+    content: "\2023";
+  }
+.challenge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer {
+  border-top: 4px solid #7675757b;
+  background-color: rgba(116, 118, 120, 0.408);
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  gap: 1rem;
+}
+.content1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  gap: 2rem;
+  /*background-color: #000;*/
+  width: 25%;
+  height: 100%;
+  padding-left: 2rem;
+}
+.content2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  gap: 1.5rem;
+  /*background-color: palegreen;*/
+  width: 25%;
+  height: 100%;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  gap: 2rem;
+  /*background-color: yellow;*/
+  width: 25%;
+  height: 100%;
+}
+.deets {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  gap: 2rem;
+  width: 25%;
+  height: 100%;
+  /*background-color: aqua;*/
+}
+.footerbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5f5c5c;
+  font-size: medium;
+}
+#A {
+  border: #000;
+  box-sizing: content-box;
+  border-radius: 1px;
+border-width: 10px;;
+  background-color: #000000;
+  color: aliceblue;
+  line-height: 3rem;
+  /*width: 90px;*/
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+#A:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.05) ;
+}
+.icons{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color:  rgba(116, 118, 120, 0.408);
+  gap: 1rem;
+}
