@@ -202,15 +202,15 @@ a:active {
 }
 .box3:hover {
   transform: scale(1.05);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 .box2:hover {
   transform: scale(1.05);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 .box1:hover {
   transform: scale(1.05);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 #box4 {
   border: 1px solid #5f5c5c;
